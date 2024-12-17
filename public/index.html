@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="webool">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- build:css css/index.min.css -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- endbuild -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <title>Webool</title>
+</head>
+
+<body>
+
+    <div class="cabecalho">
+
+        <a class="logo" href="#!/">
+            <img class="logo" src="img/logo.png" alt="Webool">
+        </a>
+
+        <ul class="menu">
+            <li>
+                <a href="#!/">Início</a>
+            </li>
+            <li>
+                <a href="#!/atividades">Atividades</a>
+            </li>
+            <li>
+                <a href="#!/sobre">Sobre</a>
+            </li>
+        </ul>
+
+        <div class="menuResponsivo">
+            <ul>
+                <li>
+                    <a href="#!/">
+                        <img src="img/home.png" alt="Início">
+                    </a>
+                </li>
+                <li>
+                    <a href="#!/atividades">
+                        <img src="img/atividades.png" alt="Atividades">
+                    </a>
+                </li>
+                <li>
+                    <a href="#!/sobre">
+                        <img src="img/sobre.png" alt="Sobre">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="conteiner">
+        <div ng-view></div>
+    </div>
+
+    <!-- Footer -->
+    <div class="rodape">
+        <div class="areaSecoes">
+            <div class="secao">
+                <span class="logo">
+                    <a href="#!/">&copy;WEBOOL</a>
+                </span>
+                <p>Todos os direitos reservados.</p>
+            </div>
+            <div class="secao">
+                <a class="titulo" href="#!/sobre">Sobre o WEBOOL</a>
+                <p>
+                    O Webool é um projeto desenvolvido no Núcleo de Desenvolvimento de Software (NUDES) no IFMS campus
+                    Aquidauana com o apoio
+                    da Associação Pestalozzi de Aquidauana.
+                </p>
+                <a class="titulo" href="#!/contato">Contato</a>
+                <div class="contato">
+                    <div class="blocoContato">
+                        <img src="img/email.png" alt="E-mail">
+                        <span>
+                            <a href="mailto:webooloficial@gmail.com">webool@gmail.com</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="secao">
+                <p class="tituloAlt">Realização:</p>
+                <div class="realizacao">
+                    <img id="nudes" src="img/nudes.png" alt="NUDES">
+                    <img id="ifms" src="img/ifms_alt.png" alt="IFMS campus Aquidauana">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- build:js js/index.min.js -->
+
+    <script src="vendors/angular/angular.min.js"></script>
+    <script src="vendors/angular-route/angular-route.min.js"></script>
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <script src="js/controllers/portugues/atividade01/letraA_controller.js"></script>
+    <script src="js/controllers/portugues/atividade01/letraB_controller.js"></script>
+    <script src="js/controllers/portugues/atividade01/letraC_controller.js"></script>
+    <script src="js/controllers/portugues/atividade01/letraD_controller.js"></script>
+    <script src="js/controllers/portugues/atividade01/letraE_controller.js"></script>
+    <script src="js/controllers/portugues/atividade01/letraF_controller.js"></script>
+    <script src="js/controllers/portugues/atividade01/letraG_controller.js"></script>
+    <script src="js/controllers/portugues/atividade01/letraH_controller.js"></script>
+    <script src="js/controllers/portugues/atividade01/letraI_controller.js"></script>
+    <script src="js/controllers/portugues/atividade01/letraJ_controller.js"></script>
+    <script src="js/controllers/portugues/atividade01/letraK_controller.js"></script>
+    <script src="js/controllers/portugues/atividade01/letraL_controller.js"></script>
+    <script src="js/controllers/portugues/atividade01/letraM_controller.js"></script>
+    <script src="js/controllers/portugues/atividade01/letraN_controller.js"></script>
+    <script src="js/controllers/portugues/atividade01/letraO_controller.js"></script>
+    <script src="js/controllers/portugues/atividade01/letraP_controller.js"></script>
+    <script src="js/controllers/portugues/atividade01/letraQ_controller.js"></script>
+    <script src="js/controllers/portugues/atividade01/letraR_controller.js"></script>
+    <script src="js/controllers/portugues/atividade01/letraS_controller.js"></script>
+    <script src="js/controllers/portugues/atividade01/letraT_controller.js"></script>
+    <script src="js/controllers/portugues/atividade01/letraU_controller.js"></script>
+    <script src="js/controllers/portugues/atividade01/letraV_controller.js"></script>
+    <script src="js/controllers/portugues/atividade01/letraX_controller.js"></script>
+    <script src="js/controllers/portugues/atividade01/letraZ_controller.js"></script>
+
+    <script src="js/controllers/matematica/forma_geometrica_controller.js"></script>
+
+    <script src="js/controllers/artes/atividade01/arte_rupestre.js"></script>
+    <script src="js/controllers/artes/atividade01/pintores_brasileiros.js"></script>
+    <script src="js/controllers/artes/atividade01/arte_gotica.js"></script>
+
+    <!-- endbuild -->
+</body>
+
+</html>

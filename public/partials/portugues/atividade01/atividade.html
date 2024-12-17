@@ -1,0 +1,49 @@
+<ol class="breadcrumb">
+    <li>
+        <a href="#!/">Início</a>
+    </li>
+    <li>
+        <a href="#!/portugues">Atividades</a>
+    </li>
+    <li>
+        <a href="#!/portugues">Português</a>
+    </li>
+    <li>
+        <a href="#!/portugues/atividade01">Soletrando</a>
+    </li>
+    <li>
+        <a href="#!/portugues/atividade01/{{letra}}">{{ titulo }}</a>
+    </li>
+</ol>
+
+<div class="bloco">
+    <div class="quadro">
+        <div class="linhaCartoes">
+            <div class="cartaoSoletrando">
+                <img src="img/portugues/{{ imagemLetra }}.png" class="imagemLetra" title="aa">
+                <h1> {{ palavra }} </h1>
+
+                <div class="campoSoletrando" ng-repeat="n in indices">
+                    <input type="text" style="font-family: Tahoma; font-size: 30px" ng-model="letras[n]"
+                        id="letra{{ n + 1}}" ng-keyup="verificarLetra(n + 1)">
+                </div>
+
+                <audio class="audioAtividade" controls>
+                    <source src="audio/portugues/{{ imagemLetra }}.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="cartaoSoletrando">
+                <img class="imagemObjeto" src="img/portugues/{{ imagemPalavra }}.png">
+                <audio class="audioAtividade" controls>
+                    <source src="audio/portugues/{{ imagemPalavra }}.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <button class="botaoProximo" ng-click="irParaProximaPagina()">Próximo</button>
+    </div>
+
+
+
+
+
+</div>
